@@ -1,0 +1,37 @@
+{
+  "name": "starter-snake-javascript",
+  "version": "1.0.0",
+  "author": "BattlesnakeOfficial",
+  "description": "An official Battlesnake template written in JavaScript. Get started at play.battlesnake.com.",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --experimental-vm-modules./node_modules/jest/bin/jest.js",
+    "eslint:fix": "eslint  --fix .",
+    "prettier:check": "prettier --check './**/*.{js,jsx,ts,tsx}'",
+    "prettier:fix": "prettier --write './**/*.{js,jsx,ts,tsx}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BattlesnakeOfficial/starter-snake-javascript.git"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "eslint-plugin-unicorn": "^49.0.0",
+    "prettier": "3.1.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$"
+  }
+}
